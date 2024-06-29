@@ -78,7 +78,7 @@ const App = () => {
   );
 
   return (
-    <div className="container">
+    <div className="app"> {/* Cambiado a "app" para aplicar los estilos */}
       <div className="input-group my-3">
         <input
           type="text"
