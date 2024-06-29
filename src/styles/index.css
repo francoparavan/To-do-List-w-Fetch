@@ -1,12 +1,81 @@
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
 
-/* 
+.background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
 
-    You can write your own styles here...
-    
-    
-    ...Or you can use the import command to include 
-    other sylesheets into your bunde as well, e.j:
-    
-    import 'relative/path/to/stylesheet.scss';
+.todo-list-container {
+    margin-top: 150px;
+    background: rgba(250, 244, 232, 0.8);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 500px;
+    box-sizing: border-box;
+    height: 400px;
+    overflow: auto; /* Habilita la barra de scrolling */
+}
 
-*/
+.todo-list-container input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    box-sizing: border-box;
+}
+
+.todo-list-container ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.todo-list-container ul li {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.todo-list-container ul li:hover .delete-icon {
+    display: inline;
+}
+
+.delete-icon {
+    display: none;
+    color: darkred;
+    cursor: pointer;
+}
+
+.todo-footer {
+    text-align: center;
+    color: grey;
+    margin-top: 10px;
+}
+
+button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #f44336;
+    color: white;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+button:hover {
+    background-color: #d32f2f;
+}
